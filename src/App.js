@@ -7,6 +7,8 @@ const App = () => {
   return (
     <NewsContextProvider>
       <News />
+      <h1 style={{ textAlign: "center" }}>{process.env.REACT_APP_API_URL}</h1>
+      <br />
     </NewsContextProvider>
   );
 };
